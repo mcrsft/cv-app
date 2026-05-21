@@ -24,7 +24,7 @@ export const resume = {
       start: "Sep 2025",
       end: "Present",
       bullets: [
-        "Ranked #2 of 68 technicians company-wide in ticket performance as of March 2026",
+        "Ranked #2 of 68 technicians company-wide in ticket performance as of May 2026",
         "Support and maintain thousands of production Linux and Windows servers across VPS, VM, and bare-metal environments in high-availability hosting infrastructure",
         "Diagnose and resolve complex system issues including high CPU, memory leaks, disk I/O constraints, and failed services (Apache, MySQL, FTP) using Zabbix, Salt, and LFD alerts",
         "Configure and optimize LiteSpeed, Apache, Nginx, and Pure-FTPd including performance tuning to improve system stability",
