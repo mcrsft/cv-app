@@ -23,8 +23,13 @@ body {
 }
 
 /* ── Hero ── */
+.app {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
+
 .hero {
-  border-bottom: 1px solid var(--border);
   padding: 3rem 2rem 2rem;
   text-align: center;
 }
@@ -103,11 +108,12 @@ body {
 
 /* ── Content ── */
 .content {
-  max-width: 860px;
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
   margin: 0 auto;
   padding: 3rem 2rem;
-}
-
+}	
 .section {
   display: flex;
   flex-direction: column;
@@ -235,4 +241,53 @@ body {
   letter-spacing: 2px;
   color: var(--crimson);
   margin-bottom: 0.25rem;
+}
+
+/* ── Loading Screen ── */
+.loader {
+  position: fixed;
+  inset: 0;
+  background: #0a0a0a;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.8s ease;
+}
+
+.loader-fade {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader-terminal {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  color: #2563EB;
+  max-width: 500px;
+  width: 100%;
+  padding: 2rem;
+}
+
+.loader-line {
+  margin: 0.4rem 0;
+  color: #2563EB;
+}
+
+.loader-line.done {
+  color: #aaa;
+}
+
+.loader-line:last-child {
+  color: #2563EB;
+}
+
+.cursor {
+  animation: blink 0.8s step-end infinite;
+  color: #2563EB;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
