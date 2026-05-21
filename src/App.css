@@ -222,3 +222,17 @@ body {
   color: var(--muted);
   margin-top: 0.2rem;
 }
+
+.skill-category {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skill-category-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--crimson);
+  margin-bottom: 0.25rem;
+}
